@@ -7,13 +7,10 @@ public class PoemManager : MonoBehaviour {
 	void Start () {
 		Debug.Log ("Hello Worl!");
 
-		GetComponent<TextMesh> ().text = "Home is where the heart is,\n" +
-			"home is where the fart is.\n" +
-			"Come let us fart in the home.\n" +
-			"There is no art in a fart.\n" +
-			"Still a fart may not be artless.\n" +
-			"Let us fart and artless fart in the home.\n" +
-			"- Ernest Hemingway" ;
+		GetComponent<TextMesh> ().text = "O Captain! my Captain! our fearful trip is done,\n" +
+			"The ship has weather’d every rack, the prize we sought is won,\n" +
+			"The port is near, the bells I hear, the people all exulting,\n" +
+			"While follow eyes the steady keel, the vessel grim and daring;" ;
 
 	}
 	

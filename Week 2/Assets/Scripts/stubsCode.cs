@@ -73,48 +73,51 @@ public class stubsCode : MonoBehaviour
 						}
 				}
 				
-				else if (currentRoom == "Classrom") {
+				else if (currentRoom == "Classroom") {
+						
 						textBuffer += "\nYou try to open the Classoom door.";
 							
 						if (foundKey == false) {
 								textBuffer += "\npress [W] to search the Teacher's Lounge" +
 								"\npress [S] to search the Dean's Office";
+
+								if (Input.GetKeyDown (KeyCode.S)) {
+									currentRoom = "Dean's Office";
+								}
+
+								if (Input.GetKeyDown (KeyCode.W)) {
+									currentRoom = "Teacher's Lounge";
+								}
 						} 
 						
 						else {
-								textBuffer += "You enter the Classroom and lock the door behind you." +
+								textBuffer += "\nYou enter the Classroom and lock the door behind you." +
 								"\nCongratulations! You are safe!";
 						}		
 				} 
 				
 				else if (currentRoom == "Dean's Office") {
-						textBuffer += "There is a SECOND velociraptor in the Dean's Office!." +
+						textBuffer += "\nThere is a SECOND velociraptor in the Dean's Office!." +
 						"\nYou are now pinned and without hope. Oh Well";
 				} 
 
 				else if (currentRoom == "Teacher's Lounge") {
-						textBuffer += "You found the key! Hurry Back to the Classrom!" +
-						"press [S] to go to return to the Classroom";
-						
+						textBuffer += "\nYou found the key! Hurry Back to the Classroom!" +
+						"\npress [S] to go to return to the Classroom";
 						foundKey = true;
+
+						if (Input.GetKeyDown (KeyCode.S)) {
+							currentRoom = "Classroom";
+						}
 				} 
 
 				else if (currentRoom == "Hallway") {
 						textBuffer += "\nWhile walking to the classrom you see a velociraptor in the Hallway!" +
 								"\nYou only have a moment to decide before your FACE GETS EATEN" + 
-								"\npress [S] to go back into the Elevators\npress [W] to go to the classroom.";
+								"\npress [W] to go to the classroom.";
 						
 						if (Input.GetKeyDown (KeyCode.W)) {
 								currentRoom = "Classroom";
-						}
-						
-						if (Input.GetKeyDown (KeyCode.S)) {
-								textBuffer += "THE ELEVATOR HAS LEFT!!!! HURRY SOMEPLACE ELSE BEFORE YOU GET EATEN!" +
-										"\nPress [W] to go to the classrom.";
-									
-								if (Input.GetKeyDown (KeyCode.W)) {
-										currentRoom = "Classroom";
-								}
 						}
 				}
 				

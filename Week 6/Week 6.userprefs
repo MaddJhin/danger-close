@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\Museum Thief\Assets\Scripts\SpotlightCollison.cs">
+    <Files>
+      <File FileName="..\Museum Thief\Assets\Scripts\SpotlightCollison.cs" Line="32" Column="69" />
+      <File FileName="..\Museum Thief\Assets\Scripts\CameraRotation4.cs" Line="19" Column="103" />
+      <File FileName="..\Museum Thief\Assets\Scripts\GuardMove.cs" Line="1" Column="1" />
+      <File FileName="..\Museum Thief\Assets\Scripts\FloorGeneration.cs" Line="317" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
